@@ -7,23 +7,26 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MusicListComponent } from './music-list/music-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
-import { FormsModule } from '@angular/forms';
 import { AppConfigModule } from './app-config/app-config.module';
 import { HttpClientModule } from '@angular/common/http'
 import { ItuneService } from './shared/itune-service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormulaireInscriptionComponent } from './formulaire-inscription/formulaire-inscription.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MusicListComponent,
-    SearchComponent
+    SearchComponent,
+    FormulaireInscriptionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     FormsModule,
     AppConfigModule,
     HttpClientModule,
