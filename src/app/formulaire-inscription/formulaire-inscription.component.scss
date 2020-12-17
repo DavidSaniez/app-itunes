@@ -1,0 +1,42 @@
+form {
+    color: rgb(108, 106, 131);
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+
+    .form_wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .form_item {
+        padding: 0.5rem;
+
+        input {
+            padding: 0.2rem;
+            margin-left: 0.5rem;
+            font-size: 1rem;
+        }
+    } 
+    
+    button {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        background-color: transparent;
+        border-radius: 10%;
+        border: 0.15rem solid rgb(108, 106, 131);
+        color: rgb(108, 106, 131);
+        font-weight: bold;
+    }
+
+    button:hover {
+        color: white;
+        background-color:rgb(108, 106, 131);
+        font-weight: bold;
+    }
+
+    button:focus {
+        outline: none;
+    }
+}

@@ -8,20 +8,23 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MusicListComponent } from './music-list/music-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormulaireInscriptionComponent } from './formulaire-inscription/formulaire-inscription.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MusicListComponent,
-    SearchComponent
+    SearchComponent,
+    FormulaireInscriptionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     FormsModule,
   ],
   providers: [],
