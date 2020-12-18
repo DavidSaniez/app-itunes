@@ -9,8 +9,6 @@ import { ItuneService } from '../shared/itune-service';
 })
 export class SearchComponent implements OnInit {
 
-  @Input() submit: boolean;
-
   constructor(public ituneService: ItuneService) { }
 
   ngOnInit(): void {

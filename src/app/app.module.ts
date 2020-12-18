@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormulaireInscriptionComponent } from './formulaire-inscription/formulaire-inscription.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormulaireConnexionComponent } from './formulaire-connexion/formulaire-connexion.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     SearchComponent,
     FormulaireInscriptionComponent,
     NotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    FormulaireConnexionComponent
   ],
   imports: [
     BrowserModule,
