@@ -10,5 +10,9 @@ export class Music {
 
         public artworkUrl100: String,
 
+        public collectionName: String,
+
+        public trackName: String,
+
         public trackId: Number ) { }
 }

@@ -4,7 +4,7 @@ import { FormulaireInscriptionComponent } from './formulaire-inscription/formula
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
-  {path: 'search', component: SearchComponent},
+  {path: '', component: SearchComponent},
   {path: 'inscription', component: FormulaireInscriptionComponent}
 ];
 

@@ -7,7 +7,9 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class ItuneService {
 
+    public music: Music[];
     public query: string;
+
     constructor(private http: HttpClient, @Inject(APP_CONFIG) private config: AppConfig) {
 
     }
@@ -20,7 +22,7 @@ export class ItuneService {
                 console.log(res.results);
                 return res.results ? res.results : [];
             })
-        ).subscribe((music) => '')
+        ).subscribe((music) => this.music = music)
     }
 
     public musicFactory(item: any) : Music {
@@ -30,6 +32,8 @@ export class ItuneService {
             item.artworkUrl30,
             item.artworkUrl60,
             item.artworkUrl100,
+            item.collectionName,
+            item.trackName,
             item.trackId
         )
     }

@@ -1,1 +1,28 @@
-<p>music-list works!</p>
+<ng-container *ngIf="!musics?.length && !submit; else showResults">
+    <div class="music_list">
+        <h2 class="music_list_title">Quel artiste souhaitez-vous écouter ?</h2>
+    </div>
+</ng-container>
+
+<ng-template #showResults>
+    <div *ngIf="musics?.length; else noResult" class="music_list">
+        <h2 class="music_list_title">Résultat(s) trouvé(s)</h2>
+        <div class="container">
+            <div *ngFor="let music of musics" class="col">
+                <figure>
+                    <a href="{{music.artistViewUrl}}" target="_blank">
+                        <img src="{{music.artworkUrl100}}" alt="">
+                    </a>
+                </figure>
+                <div class="music_details">
+                    <h3>{{music.artistName}}</h3>
+                    <h4>{{music.collectionName}}</h4>
+                    <span>{{music.trackName}}</span>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <ng-template #noResult [submit]="onSubmit">
+        <h2 class="music_list_title">Aucun résultat trouvé. Veuillez rechercher un autre artiste.</h2>
+    </ng-template>
+</ng-template>

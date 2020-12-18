@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    .music_list {
+        font-family: Nunito, sans-serif;
+    }
+
+    .music_list_title {
+        color: #464646;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3rem;
+    }
+
+    .col {
+        flex-basis: 20%;
+        margin: 1rem 0.5rem;
+    }
+    figure {
+         height: 16rem;
+    }
+    img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .music_details {
+        margin-top: 1rem;
+    }
+
+     .music-details {
+         width: 15.625rem;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+     }
+    
+}
+
+
+

@@ -37,7 +37,7 @@
   }
 
   .container {
-    width: 90%;
+    width: 100%;
     position: relative;
     z-index: 999;
 
@@ -80,6 +80,7 @@
       .header_navbar_menu {
         display: flex;
         align-items: center;
+        margin-right: 2rem;
 
         .header_navbar_menu_link {
           padding: 0 20px 0 20px;
@@ -92,6 +93,10 @@
         }
 
       }
+
+      h1:focus {
+        outline: none;
+    }
     }
   }
 }
