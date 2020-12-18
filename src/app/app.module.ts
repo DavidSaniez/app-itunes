@@ -13,6 +13,7 @@ import { ItuneService } from './shared/itune-service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormulaireInscriptionComponent } from './formulaire-inscription/formulaire-inscription.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MusicListComponent,
     SearchComponent,
     FormulaireInscriptionComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
