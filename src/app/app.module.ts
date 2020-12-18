@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { ItuneService } from './shared/itune-service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormulaireInscriptionComponent } from './formulaire-inscription/formulaire-inscription.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormulaireInscriptionComponent } from './formulaire-inscription/formula
     HeaderComponent,
     MusicListComponent,
     SearchComponent,
-    FormulaireInscriptionComponent
+    FormulaireInscriptionComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

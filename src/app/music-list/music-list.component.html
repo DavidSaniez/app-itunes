@@ -1,11 +1,11 @@
-<ng-container *ngIf="!musics?.length && !submit; else showResults">
+<ng-container *ngIf="!musics?.length; else showResults">
     <div class="music_list">
         <h2 class="music_list_title">Quel artiste souhaitez-vous écouter ?</h2>
     </div>
 </ng-container>
 
 <ng-template #showResults>
-    <div *ngIf="musics?.length; else noResult" class="music_list">
+    <div class="music_list">
         <h2 class="music_list_title">Résultat(s) trouvé(s)</h2>
         <div class="container">
             <div *ngFor="let music of musics" class="col">
@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>  
-    <ng-template #noResult [submit]="onSubmit">
+    <ng-template #noResult >
         <h2 class="music_list_title">Aucun résultat trouvé. Veuillez rechercher un autre artiste.</h2>
     </ng-template>
 </ng-template>
