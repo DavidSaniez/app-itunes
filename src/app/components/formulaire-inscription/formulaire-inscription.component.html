@@ -1,0 +1,26 @@
+<form [formGroup]="user" (ngSubmit)="onSubmit()">
+    <h2>Inscription</h2>
+    <div class="form_wrapper">
+        <div class="form_item">
+            <label>Nom :</label>
+            <input type="text" formControlName="nom">
+        </div>
+        <div class="form_item">
+            <label>Prénom :</label>
+            <input type="text" formControlName="prenom">
+        </div>
+        <div class="form_item">
+            <label>Email :</label>
+            <input type="email" formControlName="email">
+        </div>
+        <div class="form_item">
+            <label>Pseudo :</label>
+            <input type="text" formControlName="pseudo">
+        </div>
+        <div class="form_item">
+            <label>Mot de Passe :</label>
+            <input type="password" formControlName="password">
+        </div>
+    </div>
+    <button type="submit">S'inscrire</button>
+</form>

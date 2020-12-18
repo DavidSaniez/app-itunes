@@ -1,0 +1,25 @@
+<ng-container *ngIf="!musics?.length; else showResults">
+    <div class="music_list">
+        <h2 class="music_list_title">Quel artiste, musique ou album souhaitez-vous écouter ?</h2>
+    </div>
+</ng-container>
+
+<ng-template #showResults>
+    <div class="music_list">
+        <h2 class="music_list_title">Résultat(s) trouvé(s)</h2>
+        <div class="container">
+            <div *ngFor="let music of musics" class="col">
+                <figure>
+                    <a href="{{music.artistViewUrl}}" target="_blank">
+                        <img src="{{music.artworkUrl100}}" alt="">
+                    </a>
+                </figure>
+                <div class="music_details">
+                    <h3>{{music.artistName}}</h3>
+                    <h4>{{music.collectionName}}</h4>
+                    <span>{{music.trackName}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
