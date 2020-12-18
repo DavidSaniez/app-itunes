@@ -1,8 +1,8 @@
 import { HttpClient } from "@angular/common/http";
 import { Inject, Injectable } from "@angular/core";
-import { AppConfig, APP_CONFIG } from "../app-config/app-config.module";
-import { Music } from "./music";
+import { Music } from "../models/music";
 import { map } from 'rxjs/operators';
+import { AppConfig, APP_CONFIG } from "src/app/app-config/app-config.module";
 
 @Injectable()
 export class ItuneService {
@@ -19,7 +19,6 @@ export class ItuneService {
         this.http.get(`${this.config.apiEndpoint}search?term=${this.query}`).pipe(
             map(data => {
                 const res: any = data;
-                console.log(res.results);
                 return res.results ? res.results : [];
             })
         ).subscribe((music) => this.music = music)

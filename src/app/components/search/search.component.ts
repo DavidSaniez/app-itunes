@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ItuneService } from '../shared/itune-service';
+import { ItuneService } from 'src/app/core/services/itune-service';
 
 @Component({
   selector: 'app-search',

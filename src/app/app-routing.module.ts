@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FormulaireConnexionComponent } from './formulaire-connexion/formulaire-connexion.component';
-import { FormulaireInscriptionComponent } from './formulaire-inscription/formulaire-inscription.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { SearchComponent } from './search/search.component';
+import { FormulaireConnexionComponent } from './components/formulaire-connexion/formulaire-connexion.component';
+import { FormulaireInscriptionComponent } from './components/formulaire-inscription/formulaire-inscription.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { SearchComponent } from './components/search/search.component';
 
 const routes: Routes = [
   {path: '', component: SearchComponent},
